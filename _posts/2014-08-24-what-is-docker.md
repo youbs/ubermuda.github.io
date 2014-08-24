@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is Docker?
-categories:
+tags:
 - docker
 ---
 
