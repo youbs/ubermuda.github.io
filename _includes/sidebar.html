@@ -1,20 +1,19 @@
-<nav>
-  <h1>Hi.</h1>
+<nav id="sidebar">
   <a href="/">
     <img src="/logo.png" id="logo" alt="Blog logo"/>
   </a>
   <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
   <hr/>
-  <ul>
-  <p>A brief bio or something witty.</p>
-  <p>
-    Edit me in <code>_includes/sidebar.html</code>
-  </p>
+  <ul id="menu">
+    <li><a href="">Home</a></li>
+    <li><a href="">About me</a></li>
+    <li><a href="">Trainings</a></li>
+    <li><a href="">Books</a></li>
+  </ul>
   <hr/>
   <div>
     <div id="social">
       {% include social.html %}
     </div>
   </div>
-  </ul>
 </nav>
