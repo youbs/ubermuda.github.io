@@ -1,6 +1,7 @@
 ---
 layout: pages
 title: Docker 101
+category: Books
 ---
 
 The Docker 101 book is the perfect book to get started with Docker. With it, you will understand what is Docker, how it works, and how it can be useful for you. The book covers everything you need to know about docker, from building images to orchestrating remote container.

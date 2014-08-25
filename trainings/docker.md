@@ -1,6 +1,7 @@
 ---
 layout: pages
-title: Docker training
+title: Docker
+category: Trainings
 ---
 
 This Docker training is only offered in french for the moment.
