@@ -17,14 +17,14 @@ This Docker training is **only offered in french** for the moment.
 * Comprendre le fonctionnement de Docker
 * Comprendre ses avantages et ses inconvénients
 * Savoir quand l'utiliser et quand ne pas l'utiliser
-* Etre autonome avec Docker
+* Être autonome avec Docker
 
 ## Pre-requis
 
 * Familiarité avec la ligne de commande UNIX
 * Laptop avec VirtualBox ou VMWare ou Docker
 
-## Parcours pedagogique
+## Parcours pédagogique
 
 Au cours de la formation, les stagiaires construiront un container ré-utilisable pour un projet de leur choix (ou projet imposé, un seul projet par session), tout d'abord dans un container "tout en un" qui comprendra l'ensemble des services nécessaires au fonctionnement de l'application, puis dans une architecture multi-container où chaque service s'exécute dans son propre container.
 
@@ -32,9 +32,9 @@ Au cours de la formation, les stagiaires construiront un container ré-utilisabl
 
 ### Jour 1
 
-* L'infrastructure d'hier a aujourd'hui
+* L'infrastructure d'hier à aujourd'hui
   * Historique de la gestion d'une infrastructure
-  * Problemes
+  * Problèmes
 * Qu'est-ce que Docker, comment ça marche ?
   * Le concept de container
   * Pourquoi des containers ?
@@ -46,7 +46,7 @@ Au cours de la formation, les stagiaires construiront un container ré-utilisabl
   * boot2docker
 * Premiers pas
   * Création d'un container
-  * Committer un container
+  * Commiter un container
   * Re-utilisation d'une image
   * Gestion des containers et images
 * Le Dockerfile
@@ -67,7 +67,7 @@ Au cours de la formation, les stagiaires construiront un container ré-utilisabl
   * Autres solutions (Remote API, logspout, ...)
 * Pets vs Cattle
   * Présentation du problème
-  * Les containers "self-contained" multi-services avec daemontools
+  * Les containers "self-contained" multi-services avec supervisord
   * Les architectures multi-containers
 * Le networking
   * Présentation du networking avec Docker
@@ -80,7 +80,6 @@ Au cours de la formation, les stagiaires construiront un container ré-utilisabl
   * Qu'est-ce que l'orchestration ?
   * Présentation d'outils third-party : Gaudi, Fig, Vagrant, ...
   * Aller plus loin avec Fig
-  * Gerer differents fournisseur "cloud" avec libswarm
 
 ### Jour 3
 

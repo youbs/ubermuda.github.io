@@ -8,7 +8,7 @@ The Docker 101 book is the perfect book to get started with Docker. With it, you
 
 The Docker 101 book is due for release early October, but you can already pre-order at a special price for a limited time!
 
-<div class="pre-order"><a href="http://gum.co/docker-101?wanted=true" class="btn btn-success">Pre-order now for $5</a></div>
+<div class="pre-order"><a href="http://gum.co/docker-101?wanted=true" class="btn btn-success">Pre-order now for $19</a></div>
 
 Not sure just yet? [Read the first chapter online]({% post_url 2014-08-24-what-is-docker %}). More excerpts will be added soon.
 
@@ -60,8 +60,10 @@ Please be aware that since the book is still not finished, this table of content
     * Built-in
     * Using third-party tools (etcd, consul, ...)
 * Orchestration
-  * Introduction to libswarm
-  * Third-party tools (Gaudi, Fig, Vagrant, ...)
+  * What is orchestration?
+  * Third-party tools (Gaudi, Vagrant, ...)
+  * More with Fig
+  * Introduction du libswarm
 * The Remote API
   * Introduction to the Remote API
   * How to use the Remote API
