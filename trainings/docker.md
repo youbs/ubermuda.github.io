@@ -4,9 +4,11 @@ title: Docker
 category: Trainings
 ---
 
-This Docker training is only offered in french for the moment.
+This Docker training is **only offered in french** for the moment.
 
 [Drop me a mail for a quote](mailto:geoffrey.bachelet@gmail.com).
+
+{% include see_also_the_docker_101_book.html %}
 
 ---
 
