@@ -2,6 +2,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: "PT Sans", Helvetica, Arial, sans-serif !important;
 }
 
+hr {
+    margin: 30px 0 30px;
+}
+
+.post-global-note {
+    font-style: italic;
+    text-align: center;
+}
+
 p, #post ol, #post li, #post blockquote p, #post code {
     font-size: 20px;
     line-height: 30px;

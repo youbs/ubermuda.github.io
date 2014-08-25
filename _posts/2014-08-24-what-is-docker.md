@@ -11,11 +11,9 @@ tags:
 
 To achieve great power and flexibility, Docker relies on two major building blocks: images and containers. Images are the equivalent of virtual machines images, while container are the "running" version of an image. We will go into greater length of describing the differences, but for now, suffices to say that you package application into images that you can distribute, and people can use these images to create container that run your applications.
 
-## Containers, the gory details
+## Why containers?
 
 Simply put, a container is a sandbox where you can run arbitrary processes and store arbitrary files. It is a clean environment you can build upon. More often than not, people compare containers to virtual machines. This is a good analogy, although with a few caveats (most notably, containers share their kernel with the host machine).
-
-## Why containers?
 
 To create re-usable environments, we used to rely on virtualization. It has many advantages, but mostly it allows to systemically build a system from scratch. It is something you can reproduce, and it is relatively easy to share with other people.
 
@@ -66,10 +64,12 @@ One immediate consequence of this architecture is that you could very well confi
 
 The second most important consequence is that a lot of third-party clients for the API are maintained in various languages by the community (for example, I created and maintain [Docker-PHP](https://github.com/stage1/docker-php)). You thus can connect to the Docker daemon directly from your application, without the need to compile bindings or shell-out commands.
 
-## What is boot2docker
+## What is boot2docker?
 
 If you are not using a Linux-based operating systems, you can't use the `libcontainer` execution driver. Luckily, [boot2docker](https://github.com/boot2docker/boot2docker) has you covered! It is the officially supported way of running Docker on non-Linux operating systems.
 
 When you first issue a Docker command, boot2docker will boot a Linux VM behind the scene and forward all commands to a docker daemon running inside it. This VM is extremely lightweight (about only 24MB), runs entirely from the RAM and boots in about 5 seconds. It also has to boot only once,  all subsequent docker commands will be seamlessly forwarded to the same virtual machine.
 
 You will find detailed installation instructions on [boot2docker's GitHub page](https://github.com/boot2docker/boot2docker).
+
+{% include part_of_docker_101_book.md %}

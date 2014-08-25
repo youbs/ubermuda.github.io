@@ -18,6 +18,7 @@ social:
 
 # "Hi, I'm _______"
 name: Geoffrey
+full_name: Geoffrey Bachelet
 email: geoffrey.bachelet@gmail.com
 tagline: "Web development, devops and travels."
 
@@ -25,4 +26,4 @@ tagline: "Web development, devops and travels."
 google_analytics_key: ~
 
 # Toggle "Postings are my own" disclaimer in footer
-show_disclaimer: true
+show_disclaimer: false

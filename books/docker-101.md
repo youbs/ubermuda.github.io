@@ -5,22 +5,21 @@ title: Docker 101
 
 The Docker 101 book is the perfect book to get started with Docker. With it, you will understand what is Docker, how it works, and how it can be useful for you. The book covers everything you need to know about docker, from building images to orchestrating remote container.
 
-The Docker 101 book is still being written but you can already [pre-order it at a special price](https://gumroad.com/l/Docker101)!
+The Docker 101 book is still being written but you can already [pre-order it at a special price](https://gumroad.com/l/Docker101)! Additionnally, I will publish some of the chapters on [my blog](/), so stay tuned!
 
 ### Table of contents
 
 Please be aware that since the book is still not finished, this table of contents is for informational purpose only and might change without notice before the release of the book. This should however be a good indication of the content of the book.
 
-* What is Docker? How does it work?
-  * What is a container
+* [What is Docker?]({% post_url 2014-08-24-what-is-docker %})
+  * Founding blocks
   * Why containers?
-    * Comparison with virutalization
-    * Pros / Cons
-  * LXC containers / libcontainer
+  * The LXC instruction set
   * Execution drivers
+  * Union filesystems
   * Storage drivers
-  * boot2docker
-  * Getting help
+  * Docker's client/server model
+  * What is boot2docker?
 * First steps
   * Container vs Image, what's the difference?
   * Creating a container
