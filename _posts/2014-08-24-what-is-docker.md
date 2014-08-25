@@ -7,7 +7,7 @@ tags:
 
 [In its own words](https://www.docker.com/whatisdocker/), "Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications". More precisely, Docker is a wrapper around a set of technologies that allows easy, portable, fast and reproducible application packaging. Using Docker, you can package an arbitrarily complex application, push it to a Registry (basically, a public database  of applications), and deploy it in a matter of minutes. But Docker is about much much more than just packaging.
 
-## Founding blocks
+## The building blocks of Docker
 
 To achieve great power and flexibility, Docker relies on two major building blocks: **images** and **containers**.
 
