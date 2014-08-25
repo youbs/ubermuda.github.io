@@ -5,7 +5,7 @@ title: Docker 101
 
 The Docker 101 book is the perfect book to get started with Docker. With it, you will understand what is Docker, how it works, and how it can be useful for you. The book covers everything you need to know about docker, from building images to orchestrating remote container.
 
-The Docker 101 book is still being written but you can already [pre-order it at a special price](https://gumroad.com/l/Docker101)! Additionnally, I will publish some of the chapters on [my blog](/), so stay tuned!
+The Docker 101 book is still being written but you can already <a href="https://gum.co/docker-101?wanted=true">pre-order it at a special price</a>! Additionnally, I will publish some of the chapters on [my blog](/), so stay tuned!
 
 ### Table of contents
 
@@ -66,8 +66,8 @@ Please be aware that since the book is still not finished, this table of content
   * Trusted builds
   * Setting up a private registry
   * Private registry and authentication
-* Bonus
-  * CoreOS / Project Atomic
-  * Homebrew PaaS with Flynn, Mesos / Marathon
-  * Reverse proxying with nginx or hipache
-  * 0 downtime deployment howto
+
+---
+Feel free to discuss the content of this book and suggest improvements, I'm listening and continually updating the book. All purchases qualify for free lifetime updates, so do not hesitate and <a href="https://gum.co/docker-101?wanted=true">pre-order now</a>!
+
+{% include disqus.html %}
