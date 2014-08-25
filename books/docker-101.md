@@ -6,7 +6,7 @@ category: Books
 
 The Docker 101 book is the perfect book to get started with Docker. With it, you will understand what is Docker, how it works, and how it can be useful for you. The book covers everything you need to know about Docker, from building images to orchestrating remote container.
 
-The Docker 101 book due for release early October, but you can already pre-order at a special price for a limited time!
+The Docker 101 book is due for release early October, but you can already pre-order at a special price for a limited time!
 
 <div class="pre-order"><a href="http://gum.co/docker-101?wanted=true" class="btn btn-success">Pre-order now for $5</a></div>
 
@@ -74,6 +74,6 @@ Please be aware that since the book is still not finished, this table of content
   * Private registry and authentication
 
 ---
-Feel free to discuss the content of this book and suggest improvements, I'm listening and continually updating the book. All purchases qualify for free lifetime updates, so do not hesitate and <a href="https://gum.co/docker-101?wanted=true">pre-order now</a>!
+Feel free to discuss the content of this book and suggest improvements, I'm listening and continually updating the book. Also, all purchases qualify for free lifetime updates, so do not hesitate and <a href="https://gum.co/docker-101?wanted=true">pre-order now</a>!
 
 {% include disqus.html %}
