@@ -7,15 +7,12 @@ p, #post ol, #post li, #post blockquote p, #post code {
     line-height: 30px;
 }
 
-#post ul {
-    margin-bottom: 0;
-}
-
 #post li {
     margin-bottom: 0;
 }
 
 #post li ul {
+    margin-bottom: 0;
     margin-top: 0;
 }
 
