@@ -9,9 +9,9 @@ tags:
 
 ## Founding blocks
 
-To achieve great power and flexibility, Docker relies on two major building blocks: images and containers. Images are the equivalent of virtual machines images, while container are the "running" version of an image. We will go into greater length of describing the differences, but for now, suffices to say that you package application into images that you can distribute, and people can use these images to create container that run your applications.
+To achieve great power and flexibility, Docker relies on two major building blocks: **images** and **containers**.
 
-## Why containers?
+Images are the equivalent of virtual machines images, while containers can be seen as the *running* version of an image. We will go into greater length of describing the differences, but for now, suffices to say that you package applications into images that you can distribute, and people can use these images to create container that run your applications.
 
 Simply put, a container is a sandbox where you can run arbitrary processes and store arbitrary files. It is a clean environment you can build upon. More often than not, people compare containers to virtual machines. This is a good analogy, although with a few caveats (most notably, containers share their kernel with the host machine).
 
@@ -24,23 +24,19 @@ Virtualization comes with its set of drawbacks though, most notably:
 
 Docker containers address these problems, and then some.
 
-## The LXC instruction set
+## LXC and execution drivers
 
 To quote [the Debian Handbook](http://debian-handbook.info/browse/stable/sect.virtualization.html):
 
 > LXC is not, strictly speaking, a virtualization system, but a system to isolate groups of processes from each other even though they all run on the same host. It takes advantage of a set of recent evolutions in the Linux kernel, collectively known as control groups, by which different sets of processes called “groups” have different views of certain aspects of the overall system. Most notable among these aspects are the process identifiers, the network configuration, and the mount points. Such a group of isolated processes will not have any access to the other processes in the system, and its accesses to the filesystem can be restricted to a specific subset. It can also have its own network interface and routing table, and it may be configured to only see a subset of the available devices present on the system.
 
-The Docker team has released the result of their work on LXC in the form of a re-usable go library called [`libcontainer`](https://github.com/docker/libcontainer).
+While LXC has been the foundation of Docker for a while, the Docker team has since released [`libcontainer`](https://github.com/docker/libcontainer) to replace the Docker's LXC driver as the default execution driver. 
 
-## Execution drivers
+Execution drivers are the portability layer of Docker that will eventually permit seamless containerization across systems. As of Docker 1.2, there are two execution drivers: `libcontainer`, the default driver, that is a pure Go wrapper around the Linux kernel's namespacing capabilities and LXC, which is based off the popular containerization platform LXC. Both `libcontainer` and LXC require Linux to run, but one can run Docker on non-Linux systems using a VM called `boot2docker`, that we will cover in a few paragraphs.
 
-Execution drivers are the portability layer of Docker. They will eventually permit seamless containerization across systems. As of 1.0, there is only one official execution driver, `libcontainer`, that works using Linux' LXC instructions. Docker 1.0 runs on non-Linux systems using a VM called `boot2docker` that we will cover in a few paragraphs.
-
-## Union filesystems
+## Union filesystems and storage drivers
 
 Docker makes clever use of union capable filesystems to optimize re-usability of images and make sure as little hard disk space as possible is used. To understand this, you first have to picture yourself what a Docker container is: the union of a root filesystem (read-only filesystem that contains all the base operating system – also known as `rootfs`) and a user land read-write filesystem that will contains all your modifications to the base image.
-
-## Storage drivers
 
 There are currently two drivers available for managing filesystems in Docker: `AUFS` – the historic driver – and `devicemapper`.
 
@@ -71,5 +67,7 @@ If you are not using a Linux-based operating systems, you can't use the `libcont
 When you first issue a Docker command, boot2docker will boot a Linux VM behind the scene and forward all commands to a docker daemon running inside it. This VM is extremely lightweight (about only 24MB), runs entirely from the RAM and boots in about 5 seconds. It also has to boot only once,  all subsequent docker commands will be seamlessly forwarded to the same virtual machine.
 
 You will find detailed installation instructions on [boot2docker's GitHub page](https://github.com/boot2docker/boot2docker).
+
+---
 
 {% include part_of_docker_101_book.md %}
