@@ -7,6 +7,23 @@ p, #post ol, #post li, #post blockquote p, #post code {
     line-height: 30px;
 }
 
+#post ul {
+    margin-bottom: 0;
+}
+
+#post li {
+    margin-bottom: 0;
+}
+
+#post li ul {
+    margin-top: 0;
+}
+
+#post li p {
+    margin: 0;
+    line-height: inherit;
+}
+
 #menu {
     list-style-type: none;
     padding: 0;

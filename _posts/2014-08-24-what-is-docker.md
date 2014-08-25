@@ -55,8 +55,6 @@ You can change the storage driver by using the `--storage-driver` option in your
 
 Before switching, be aware that both storage driver are not compatible with each other and you will either have to re-create any image and controller you had or export and re-import them.
 
-For more details on Docker's configuration, see Chapter 2 – First steps.
-
 ## Docker's client/server model
 
 One of the most awesome features of Docker, yet often overlooked by beginners, is its client/server model. The Docker binary can run in two distinct modes:
@@ -68,12 +66,10 @@ One immediate consequence of this architecture is that you could very well confi
 
 The second most important consequence is that a lot of third-party clients for the API are maintained in various languages by the community (for example, I created and maintain [Docker-PHP](https://github.com/stage1/docker-php)). You thus can connect to the Docker daemon directly from your application, without the need to compile bindings or shell-out commands.
 
-We will see how to start Docker in daemon mode, and how to configure it, in greater lengths in Chapter 2.
-
 ## What is boot2docker
 
 If you are not using a Linux-based operating systems, you can't use the `libcontainer` execution driver. Luckily, [boot2docker](https://github.com/boot2docker/boot2docker) has you covered! It is the officially supported way of running Docker on non-Linux operating systems.
 
 When you first issue a Docker command, boot2docker will boot a Linux VM behind the scene and forward all commands to a docker daemon running inside it. This VM is extremely lightweight (about only 24MB), runs entirely from the RAM and boots in about 5 seconds. It also has to boot only once,  all subsequent docker commands will be seamlessly forwarded to the same virtual machine.
 
-You will find detailed installation instructions in Chapters 2, as well as on [boot2docker's GitHub page](https://github.com/boot2docker/boot2docker).
+You will find detailed installation instructions on [boot2docker's GitHub page](https://github.com/boot2docker/boot2docker).
