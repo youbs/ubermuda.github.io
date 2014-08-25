@@ -6,9 +6,11 @@ category: Books
 
 The Docker 101 book is the perfect book to get started with Docker. With it, you will understand what is Docker, how it works, and how it can be useful for you. The book covers everything you need to know about Docker, from building images to orchestrating remote container.
 
-The Docker 101 book is still being written but you can already <a href="https://gum.co/docker-101?wanted=true">pre-order it at the special price of $5</a>. Additionnally, I will publish some of the chapters on [my blog](/), so stay tuned!
+The Docker 101 book due for release early October, but you can already pre-order at a special price for a limited time!
 
 <div class="pre-order"><a href="http://gum.co/docker-101?wanted=true" class="btn btn-success">Pre-order now for $5</a></div>
+
+Not sure just yet? [Read the first chapter online]({% post_url 2014-08-24-what-is-docker %}). More excerpts will be added soon.
 
 {% include see_also_my_docker_training.html %}
 
@@ -19,11 +21,11 @@ The Docker 101 book is still being written but you can already <a href="https://
 Please be aware that since the book is still not finished, this table of contents is for informational purpose only and might change without notice before the release of the book. This should however be a good indication of the content of the book.
 
 * [What is Docker?]({% post_url 2014-08-24-what-is-docker %})
-  * The building blocks of Docker
-  * LXC and execution drivers
-  * Union filesystems and storage drivers
-  * Docker's client/server model
-  * Running Docker on non-Linux hosts
+  * [The building blocks of Docker]({% post_url 2014-08-24-what-is-docker %}#the-building-blocks-of-docker)
+  * [LXC and execution drivers]({% post_url 2014-08-24-what-is-docker %}#lxc-and-execution-drivers)
+  * [Union filesystems and storage drivers]({% post_url 2014-08-24-what-is-docker %}#union-filesystems-and-storage-drivers)
+  * [Docker's client/server model]({% post_url 2014-08-24-what-is-docker %}#dockers-clientserver-model)
+  * [Running Docker on non-Linux hosts]({% post_url 2014-08-24-what-is-docker %}#running-docker-on-non-linux-hosts)
 * First steps
   * Container vs Image, what's the difference?
   * Creating a container
