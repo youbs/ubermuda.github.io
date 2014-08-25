@@ -19,14 +19,11 @@ The Docker 101 book is still being written but you can already <a href="https://
 Please be aware that since the book is still not finished, this table of contents is for informational purpose only and might change without notice before the release of the book. This should however be a good indication of the content of the book.
 
 * [What is Docker?]({% post_url 2014-08-24-what-is-docker %})
-  * Founding blocks
-  * Why containers?
-  * The LXC instruction set
-  * Execution drivers
-  * Union filesystems
-  * Storage drivers
+  * The building blocks of Docker
+  * LXC and execution drivers
+  * Union filesystems and storage drivers
   * Docker's client/server model
-  * What is boot2docker?
+  * Running Docker on non-Linux hosts
 * First steps
   * Container vs Image, what's the difference?
   * Creating a container
