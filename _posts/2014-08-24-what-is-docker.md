@@ -60,7 +60,7 @@ One immediate consequence of this architecture is that you could very well confi
 
 The second most important consequence is that a lot of third-party clients for the API are maintained in various languages by the community (for example, I created and maintain [Docker-PHP](https://github.com/stage1/docker-php)). You thus can connect to the Docker daemon directly from your application, without the need to compile bindings or shell-out commands.
 
-## What is boot2docker?
+## Running Docker on non-Linux hosts
 
 If you are not using a Linux-based operating systems, you can't use the `libcontainer` execution driver. Luckily, [boot2docker](https://github.com/boot2docker/boot2docker) has you covered! It is the officially supported way of running Docker on non-Linux operating systems.
 
