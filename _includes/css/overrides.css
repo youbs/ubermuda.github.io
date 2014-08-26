@@ -109,7 +109,7 @@ div.pre-order a.btn {
 
 .btn-success:hover, .btn-success:focus {
     background-color: #419641;
-    background-position: 0 -15px;
+    background-position: 0 -45px;
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
