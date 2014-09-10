@@ -1,3 +1,0 @@
-<hr />
-
-<p class="post-global-note">This post is an excerpt from the <a href="/books/docker-101.html">Docker 101</a> book.</p>

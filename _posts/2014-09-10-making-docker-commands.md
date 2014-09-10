@@ -83,3 +83,5 @@ You can check that it worked by running `alias` without argument to get the list
 One last thing. At the begining of this post, I said docker was great to *package*, *ship* and *run*. We packaged and ran, and since I like you (yes, even if you're using zsh), I *shipped* too.
 
 You can use the [`ubermuda/composer`](https://registry.hub.docker.com/u/ubermuda/composer/) image in an alias to do just what we described in this post, without the hassle to actually build the container. How cool is that? I'll save you the trouble to answer, *a lot* is how cool it is.
+
+{% include see_also_book_discovering_docker.html %}

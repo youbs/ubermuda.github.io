@@ -70,4 +70,4 @@ When you first issue a Docker command, boot2docker will boot a Linux VM behind t
 
 You will find detailed installation instructions on [boot2docker's GitHub page](https://github.com/boot2docker/boot2docker).
 
-<!-- {% include part_of_docker_101_book.md %} -->
+{% include part_of_book_discovering_docker.html %}
