@@ -8,7 +8,7 @@ category: Books
 
 *Discover Docker* is due for release late October, but you can already pre-order at a special price for a limited time!
 
-<div class="pre-order"><a href="http://gum.co/discovering-docker/pre-order?wanted=true" class="btn btn-success">Pre-order now for $19</a></div>
+<div class="pre-order"><a href="http://gum.co/discovering-docker/pre-order?wanted=true" class="btn btn-success">Pre-order now for $9</a></div>
 
 Not sure just yet? [Read the first chapter online]({% post_url 2014-08-24-what-is-docker %}). More excerpts will be added soon. 
 
