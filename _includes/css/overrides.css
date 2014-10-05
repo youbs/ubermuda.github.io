@@ -60,6 +60,10 @@ div.pre-order a.btn {
     font-size: 1.5em;
 }
 
+div.pre-order a {
+    color: white !important;
+}
+
 /** buttons */
 
 .btn {
