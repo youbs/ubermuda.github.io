@@ -38,9 +38,9 @@ Because I'm lazy, and I need to keep some content for my book, we'll only see th
 
 ## Initializing a project
 
-First thing is to initialize a new Symfony project. The recommended way to do this is to use [composer][1] with the `create-project` command. We could install composer on our workstation, but that would be too easy, so instead we're going to use it through docker too.
+First thing is to initialize a new Symfony project. The recommended way to do this is to use [composer](http://getcomposer.org/) with the `create-project` command. We could install composer on our workstation, but that would be too easy, so instead we're going to use it through docker too.
 
-Luckily, I published an article on how to do just that: [make docker commands][2] (Ok I'm cheating, I initially wrote it as part of this very article, then decided that it would make a good standalone).
+Luckily, I published an article on how to do just that: [make docker commands](http://geoffrey.io/make-docker-commands.html/) (Ok I'm cheating, I initially wrote it as part of this very article, then decided that it would make a good standalone).
 
 Anyway, go read it, then create yourself a `composer` alias if don't have one already:
 
@@ -56,7 +56,7 @@ Awesome. Give yourself a high-five, get a cup of coffee or whatever is your liqu
 
 Building a self-sufficient container to run a standard Symfony project is pretty easy. All we have to do is to install our usual stack of nginx, php5-fpm and mysql-server, throw in a pre-made nginx vhost configuration, tweak some config files, and we're good to go.
 
-All source code for this container is available at GitHub in the [ubermuda/docker-symfony][3] repository. Let's review the Dockerfile:
+All source code for this container is available at GitHub in the [ubermuda/docker-symfony](https://github.com/ubermuda/docker-symfony) repository. Let's review the Dockerfile:
 
 	FROM debian:wheezy
 	
@@ -215,7 +215,4 @@ We get Symfony's default error message for when you're trying to access the dev 
 
 Ok that was easy. We can now start environments very quickly, and update them easily, but there are a few areas of improvements. Next time, we'll see how to run commands inside a running container, stay tuned!
 
-
-[1]:	http://getcomposer.org/
-[2]:	http://geoffrey.io/make-docker-commands.html/
-[3]:	https://github.com/ubermuda/docker-symfony
+{% include see_also_book_discovering_docker.html %}
