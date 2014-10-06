@@ -25,14 +25,14 @@ Docker allows all of this, and a bit more. You can destroy a container and re-cr
 
 ## What is a PHP development environment
 
-Given the complexity of today's web applications, a PHP development environment can be a lot of things. To keep things simple, we are going to limit ourselves. Our environement will be able to run a Symfony project through Nginx and PHP5-FPM, with MySQL. Running CLI commands inside a running container is a bit more complicated, so we'll keep that for another post too.
+Given the complexity of today's web applications, a PHP development environment can be a lot of things. To keep things simple, we are going to limit ourselves. Our environment will be able to run a Symfony project through Nginx and PHP5-FPM, with MySQL. Running CLI commands inside a running container is a bit more complicated, so we'll keep that for another post too.
 
 ## Pet vs Cattle
 
 Another decision we have to make upfront is whether our development environment will be single or multi-container. There are advantages in both:
 
-* single-containers are easier to pass around, and manipulate
-* multi-containers allows for greater modularity when adding components to your stack
+* single-containers are easier to pass around, and manipulate, because they are self-contained. Everything runs in the same container, much like a VM. It also means that every time you want to upgrade something (new version of PHP for example), you need to rebuild the whole container.
+* multi-containers allows for greater modularity when adding components to your stack, because each container contains a part of the stack: web, php, mysql, etc. You can scale up each service individually, easily add services without having to rebuild everything, etc.
 
 Because I'm lazy, and I need to keep some content for my book, we'll only see the single-container approach in this post.
 
@@ -56,7 +56,7 @@ Awesome. Give yourself a high-five, get a cup of coffee or whatever is your liqu
 
 Building a self-sufficient container to run a standard Symfony project is pretty easy. All we have to do is to install our usual stack of nginx, php5-fpm and mysql-server, throw in a pre-made nginx vhost configuration, tweak some config files, and we're good to go.
 
-All source code for this container is available at GitHub in the [ubermuda/docker-symfony](https://github.com/ubermuda/docker-symfony) repository. Let's review the Dockerfile:
+All source code for this container is available at GitHub in the [ubermuda/docker-symfony](https://github.com/ubermuda/docker-symfony) repository. The Dockerfile is the configuration file used by Docker to build an image, let's review it:
 
 	FROM debian:wheezy
 	
@@ -81,9 +81,16 @@ All source code for this container is available at GitHub in the [ubermuda/docke
 	
 	CMD ["/usr/bin/supervisord"]
 
-Pretty standard stuff here. We start with extending the `debian:wheezy` base image, then proceed to install everything we're going to need.
+We start with extending the `debian:wheezy` base image, then proceed to configure nginx and php5-fpm with a series of `sed` commands:
 
-Then there's a bit of configuration manipulation to have everything run in the foreground and with the right users, and a few configuration files. These configuration files are worth a look though. Here's the `vhost.conf`:
+	RUN sed -e 's/;daemonize = yes/daemonize = no/' -i /etc/php5/fpm/php-fpm.conf
+	RUN sed -e 's/;listen\.owner/listen.owner/' -i /etc/php5/fpm/pool.d/www.conf
+	RUN sed -e 's/;listen\.group/listen.group/' -i /etc/php5/fpm/pool.d/www.conf
+	RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
+
+We do two things here. First, configuring php5-fpm and nginx to run in the foreground so supervisord can keep track of them later. Then we configure php5-fpm to run with the user as the web server, to avoid a few issues with file permissions.
+
+With that taken care of, we can install a couple of configuration files. First, nginx' vhost configuration file, `vhost.conf`:
 
 	server {
 	    listen 80;
@@ -106,7 +113,9 @@ Then there's a bit of configuration manipulation to have everything run in the f
 	    }
 	}
 
-Again, standard stuff here. The `supervisord.conf` file, however, has a small twist:
+We set the `server_name` to `_` because we don't need any (it's a bit like perl's `$_` placeholder var), and configure the document root to be `/srv/web`, so we'll want to deploy the application to `/srv` later. The rest is standard nginx + php5-fpm configuration.
+
+We need supervisord (or any other process manager, but I like supervisord better), because a container can only run one process at a time. Luckily, this process can be a process manager that will spawn all the processes we need! Here's the configuration for supervisord, with a small twist:
 
 	[supervisord]
 	nodaemon=true
@@ -178,7 +187,7 @@ That's a bunch of options, let's review what each does:
 * `-i` enables *interactive* mode, that is, `STDIO`s are attached to your current terminal. This is useful to receive logs and send signals to the process running inside the container.
 * `-t` creates a virtual `TTY` for the container. Basically, it's `-i`'s best friend and you'll often use (or not use) them together.
 * `-P` tells the Docker daemon to publish all exposed ports. In our case, that will be the port 80.
-* `-v $PWD:/srv` mounts the current directory into the container's `/srv` directory.
+* `-v $PWD:/srv` mounts the current directory into the container's `/srv` directory. Mounting a directory makes its content available at the target *mount point*.
 
 Now you you might remember the `DB_NAME` and `INIT` environment variables we talked about earlier, and wonder what they're for. They are used to customized your environment. Basically, you can set environment variables in your containers with `docker run`'s `-e` option, and they will be catched up by the init script.
 
@@ -211,7 +220,19 @@ The `docker ps -aql 1` command is a handy shortcut to retrieve the last containe
 	$ curl http://localhost:49153
 	You are not allowed to access this file. Check app_dev.php for more information.
 
-We get Symfony's default error message for when you're trying to access the dev controller not from localhost. This is perfectly normal, since we're not curling from inside the container. You can safely remove lines 10 to 18 of the default `app_dev.php` file, and you're finally all set!
+We get Symfony's default error message for when you're trying to access the dev controller not from localhost. This is perfectly normal, since we're not curling from inside the container. You can safely remove those lines from the `web/app_dev.php` front controller:
+
+    // This check prevents access to debug front controllers that are deployed by accident to production servers.
+    // Feel free to remove this, extend it, or make something more sophisticated.
+    if (isset($_SERVER['HTTP_CLIENT_IP'])
+        || isset($_SERVER['HTTP_X_FORWARDED_FOR'])
+        || !(in_array(@$_SERVER['REMOTE_ADDR'], array('127.0.0.1', 'fe80::1', '::1')) || php_sapi_name() === 'cli-server')
+    ) {
+        header('HTTP/1.0 403 Forbidden');
+        exit('You are not allowed to access this file. Check '.basename(__FILE__).' for more information.');
+    }
+
+These are the lines that prevent access to the dev controller from anywhere else than localhost. We can now retry our curl and check that it works:
 
 Ok that was easy. We can now start environments very quickly, and update them easily, but there are a few areas of improvements. Next time, we'll see how to run commands inside a running container, stay tuned!
 
