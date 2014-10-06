@@ -164,3 +164,7 @@ div.pre-order a {
 #post pre code {
     display: block;
 }
+
+p img {
+    width: 100%;
+}
