@@ -4,13 +4,25 @@ title: Discovering Docker
 category: Books
 ---
 
-*Discovering Docker* is the perfect book to get started with Docker. With it, you will understand what is Docker, how it works, and how it can be useful for you. The book covers everything you need to know about Docker, from building images to orchestrating remote containers.
+*Discovering Docker* is the perfect book to get started with Docker. With it, you will understand what is Docker, how it works, and how it can be useful for you. The book covers everything you need to know about Docker, from building images to orchestrating remote containers. You will then be able to leverage the power of Docker for your every day tasks, like setting up development environment, easily running continuous integration in separated containers, deploy to any Docker capable cloud, scale your infrastructure, you name it.
 
 *Discovering Docker* is due for release late October, but you can already pre-order at a special price for a limited time!
 
 <div class="pre-order"><a href="http://gum.co/discovering-docker/pre-order?wanted=true" class="btn btn-success">Pre-order now for $9</a></div>
 
 Not sure just yet? [Read the first chapter online]({% post_url 2014-08-24-what-is-docker %}). More excerpts will be added soon. 
+
+## Who is this book for?
+
+The *Discovering Docker* book is aimed at people who wants to understand what is Docker, how it works and what can be done with it. It features explanations of how Docker works internally, comprehensive coverage of its API, and practical examples what can be done with it.
+
+## Do I need knowledge of Docker to read this book?
+
+No, you do not. The book is self-sufficient and will teach you everything you need to know to get started with Docker.
+
+## Are there translations planned?
+
+A french translated version will be released soon after the english one, and downloadable for free for buyers of the english version, so do not hesitate to pre-order now. After that, I'd like to organize community-driven translations whose revenues will be reversed to the translators and/or opensource projects.
 
 {% include see_also_my_docker_training.html %}
 
@@ -63,7 +75,7 @@ Please be aware that since the book is still not finished, this table of content
   * What is orchestration?
   * Third-party tools (Gaudi, Vagrant, ...)
   * More with Fig
-  * Introduction du libswarm
+  * Introduction to libswarm
 * The Remote API
   * Introduction to the Remote API
   * How to use the Remote API
