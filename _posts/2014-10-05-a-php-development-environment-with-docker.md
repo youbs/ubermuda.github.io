@@ -40,7 +40,7 @@ Because I'm lazy, and I need to keep some content for my book, we'll only see th
 
 First thing is to initialize a new Symfony project. The recommended way to do this is to use [composer](http://getcomposer.org/) with the `create-project` command. We could install composer on our workstation, but that would be too easy, so instead we're going to use it through docker too.
 
-Luckily, I published an article on how to do just that: [make docker commands](http://geoffrey.io/make-docker-commands.html/) (Ok I'm cheating, I initially wrote it as part of this very article, then decided that it would make a good standalone).
+Luckily, I published an article on how to do just that: [make docker commands](http://geoffrey.io/making-docker-commands.html) (Ok I'm cheating, I initially wrote it as part of this very article, then decided that it would make a good standalone).
 
 Anyway, go read it, then create yourself a `composer` alias if don't have one already:
 
