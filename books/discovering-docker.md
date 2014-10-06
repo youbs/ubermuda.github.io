@@ -10,7 +10,7 @@ category: Books
 
 *Discovering Docker* is the perfect book to get started with Docker. With it, you will understand what is Docker, how it works, and how it can be useful for you. The book covers everything you need to know about Docker, from building images to orchestrating remote containers.
 
-You will then be able to leverage the power of Docker for your every day tasks, like setting up development environment, easily running continuous integration in separated containers, deploy to any Docker capable cloud, scale your infrastructure, you name it.
+You will then be able to leverage the power of Docker for your every day tasks, like setting up development environment, easily running continuous integration in separated containers, deploying to any Docker-capable cloud, scaling your infrastructure at the snap of your fingers (not contractual), you name it.
 
 *Discovering Docker* is due for release late October, but you can already pre-order at a special price for a limited time!
 
