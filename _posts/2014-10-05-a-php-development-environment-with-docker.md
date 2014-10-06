@@ -238,4 +238,8 @@ These are the lines that prevent access to the dev controller from anywhere else
 
 Ok that was easy. We can now start environments very quickly, and update them easily, but there's still a lot of place for improvement. Next time, we'll see how to run commands inside a running container, stay tuned!
 
+<hr />
+
+<p class="post-global-note">Special thanks to <a href="https://twitter.com/clemkeirua">Clément Keirua</a> for the excellent proofreading!</p>
+
 {% include see_also_book_discovering_docker.html %}
