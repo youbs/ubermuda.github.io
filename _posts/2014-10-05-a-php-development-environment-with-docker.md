@@ -74,7 +74,7 @@ All source code for this container is available at GitHub in the [ubermuda/docke
 	ADD supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 	ADD init.sh /init.sh
 	
-	EXPOSE 80
+	EXPOSE 80 3306
 	
 	VOLUME ["/srv"]
 	WORKDIR /srv
@@ -232,8 +232,10 @@ We get Symfony's default error message for when you're trying to access the dev 
         exit('You are not allowed to access this file. Check '.basename(__FILE__).' for more information.');
     }
 
-These are the lines that prevent access to the dev controller from anywhere else than localhost. We can now retry our curl and check that it works:
+These are the lines that prevent access to the dev controller from anywhere else than localhost. You can now retry our curl and check that it works, or even point your browser at [http://localhost:49153/](http://localhost:49153/):
 
-Ok that was easy. We can now start environments very quickly, and update them easily, but there are a few areas of improvements. Next time, we'll see how to run commands inside a running container, stay tuned!
+![It works!](/images/docker-php-env-dev/result.png)
+
+Ok that was easy. We can now start environments very quickly, and update them easily, but there's still a lot of place for improvement. Next time, we'll see how to run commands inside a running container, stay tuned!
 
 {% include see_also_book_discovering_docker.html %}
