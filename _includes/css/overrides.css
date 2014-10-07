@@ -193,3 +193,10 @@ p.post-global-note img.book-cover {
 p.align-justify {
     text-align: justify;
 }
+
+.sidebar-promo p {
+    text-align: justify;
+    font-size: 100%;
+    font-weight: 600;
+    line-height: 1em;
+}
