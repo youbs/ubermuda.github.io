@@ -28,6 +28,12 @@ The *Discovering Docker* book is aimed at people who wants to understand what is
 
 No, you do not. The book is self-sufficient and will teach you everything you need to know to get started with Docker.
 
+## In what format will the book be available?
+
+*Discovering Docker* will be available out of the box in PDF and ePub formats, and on demand in any format supported by [Pandoc](http://johnmacfarlane.net/pandoc/).
+
+I will try my best to provide mobi format for Kindles, and printed copies through [Lulu](http://lulu.com), but can't make any promise about these formats as of now.
+
 ## Are there translations planned?
 
 A french translated version will be released soon after the english one, and downloadable for free for buyers of the english version, so do not hesitate to pre-order now. After that, I'd like to organize community-driven translations whose revenues will be reversed to the translators and/or opensource projects.
