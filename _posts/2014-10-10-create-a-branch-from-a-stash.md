@@ -69,3 +69,5 @@ Now to achieve our initial goal, let's push that branch:
      * [new branch]      bar -> bar
 
 And that's it. Even though we did not technically push the stash, we created a branch from it and pushed it, achieving the same purpose!
+
+**UPDATE**: [Cedric Exbrayat](https://twitter.com/cedric_exbrayat) [just pointed out](https://twitter.com/cedric_exbrayat/status/520547071569715200) that you can in fact use the `git stash branch` command to achieve just that, with added benefits (automatically dropping the stash for example), which shows just why I love Git (apart from graphs): you never stop learning!
