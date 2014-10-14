@@ -22,7 +22,7 @@ To illustrate this, consider an empty repository:
     Checking connectivity... done.
     ~$ cd test/
 
-Say you're doing some work, creating and comitting files:
+Say you're doing some work, creating and committing files:
 
     test (master #) $ echo foo > README.md
     test (master #%) $ git add .; git commit -m "initial commit"
