@@ -25,3 +25,4 @@ Now that's only one part of Hong Kong, and of course, there's the island of Hong
 
 All in all, the week passed rather quickly, and before I realized, I found myself in a plane to Hanoi (Vietnam), but that is another story that I'll be happy to tell in another blog post!
 
+If you're interested in the pictures, you can see everything on [my flickr account](https://www.flickr.com/photos/mirmozibang/sets/72157649188693855/) or on [instagram](http://instagram.com/ubermuda)!
