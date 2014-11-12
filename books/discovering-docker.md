@@ -12,7 +12,7 @@ category: Books
 
 You will then be able to leverage the power of Docker for your every day tasks, like setting up development environment, easily running continuous integration in separated containers, deploying to any Docker-capable cloud, scaling your infrastructure at the snap of your fingers (not contractual), you name it.
 
-*Discovering Docker* is due for release late October, but you can already pre-order at a special price for a limited time!
+*Discovering Docker* is due for release late november, but you can already pre-order at a special price for a limited time!
 
 <div class="pre-order">
     <a href="http://gum.co/discovering-docker/pre-order?wanted=true" class="btn btn-success">Pre-order now for $9</a>
