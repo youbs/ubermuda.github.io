@@ -3,6 +3,7 @@ layout: post
 title: "First week in Asia: Hong Kong"
 tags: 
 - nomad
+- travels
 - hong kong
 - asia
 ---
