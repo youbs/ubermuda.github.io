@@ -8,6 +8,7 @@ tags:
 - vietnam
 - jimmies
 - asia
+category: travels
 ---
 
 Visiting Vietnam was bound to hold a lot of surprises for me, since it's not a country I know very well. Sure it has a long common history with France, and I've seen Forrest Gump and a few other movies about the USA's struggle here, but that's about it.  I also had read bad things about vietnamese people (spoiler: it's just not true, vietnamese people are super friendly), and was overall thinking the country was still in control of the military.

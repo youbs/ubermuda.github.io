@@ -5,6 +5,7 @@ tags:
 - docker
 - command
 - alias
+category: tech
 ---
 
 [Docker](http://docker.com/) is awesome to package, ship and run daemon applications, but you sometime wish you could package binaries the same way, to avoid, for example, installing a shipload of crap on your workstation. This is very doable, and actually pretty easy. Let's see how we can dockerize [composer](http://getcomposer.org/), a PHP package manager, and then use it seamlessly on any PHP-less system.

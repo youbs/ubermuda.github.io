@@ -17,7 +17,7 @@ I also do devops! I'm a huge fan of Docker, and have been using it since 0.3. As
 
 ## Traveling
 
-I love to travel, and aspire to a more nomad way of life. I've been to Sweden (twice), Japan (twice too), England, Ireland, Denmark, Czech Republic, Italy, The Netherlands, The USA, and lived in Montreal for one and a half years. I also visited a lot of places in my homeland, France, and currently live in Lyon while planning a 3 months trip in south-east Asia.
+I love to travel, and aspire to a more nomad way of life. I've been to Sweden (twice), Japan (twice too), England, Ireland, Denmark, Czech Republic, Italy, the Netherlands, the USA, and lived in Montreal for one and a half years. I also visited a lot of places in my homeland, France, and currently am [traveling through south-east Asia](/travels/).
 
 ## Misc
 

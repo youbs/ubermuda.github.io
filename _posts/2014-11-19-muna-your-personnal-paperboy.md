@@ -3,6 +3,7 @@ layout: post
 title: Muna, your personal paperboy
 tags:
 - muna
+category: tech
 ---
 
 The internet is a formidable source of content. Everyday, tons and tons of content is created and thrown to the masses for consumption. Everyone has his own way of managing this flux of information, which may or may not be effective.

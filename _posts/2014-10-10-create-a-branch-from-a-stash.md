@@ -4,6 +4,7 @@ title: Create a branch from a stash
 tags:
 - git
 - stash
+category: tech
 ---
 
 The other day I stumbled upon an interesting Git question on the HumanCoders' forums, [can you push a stash?](https://forum.humancoders.com/t/peut-on-pusher-un-stash/390) (in french).

@@ -3,6 +3,7 @@ layout: post
 title: What is Docker?
 tags:
 - docker
+category: tech
 ---
 
 [In its own words](https://www.docker.com/whatisdocker/), *Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications*. More precisely, Docker is a wrapper around a set of technologies that allows easy, portable, fast and reproducible application packaging and deployment.

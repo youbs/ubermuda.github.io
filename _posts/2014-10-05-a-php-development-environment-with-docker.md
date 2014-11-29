@@ -5,6 +5,7 @@ tags:
 - docker
 - PHP
 - development
+category: tech
 ---
 
 A lot of developers nowadays use Vagrant to manage their development environment through Virtual Machines. Vagrant is awesome, but VMs have a number of drawbacks (mainly, it uses a lot of resources). With the emergence of container technologies, and more particularily Docker, we have a simple solution to this problem.

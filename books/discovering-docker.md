@@ -53,53 +53,61 @@ Please be aware that since the book is still not finished, this table of content
   * [Docker's client/server model]({% post_url 2014-08-24-what-is-docker %}#dockers-clientserver-model)
   * [Running Docker on non-Linux hosts]({% post_url 2014-08-24-what-is-docker %}#running-docker-on-non-linux-hosts)
 * First steps
+  * Installation
   * Container vs Image, what's the difference?
   * Creating a container
   * Committing a container
-  * Re-using an image
-  * Managing containers and images
-* Dockerfile
-  * Introduction to the Dockerfile
-  * Syntax and DSL explanation
-  * Dockerfile and build context
+  * Managing containers
+  * Managing images
+* Automating builds with the Dockerfile
+  * What is a Dockerfile?
+  * The `docker build` command
+  * Build context
+  * Context-less builds
+  * Cache management
   * Limitations
-  * Image overloading
-  * Leveraging the build cache
-* Volumes and file sharing
-  * What are volumes? How are they useful?
+  * Syntax and grammar of the Dockerfile
+  * Instructions
+* Volumes
+  * What are volumes and how do they work
+  * Creating a volume
   * Sharing files between host and container
-  * The Data Container design pattern
-  * Sharing volumes between containers
-* Managing logs
-  * With the host's syslog
-  * Via a volume share
-  * Other solutions (Remote Api, logspout, ...)
-* Pet vs Cattle
-  * Problem explanation
-  * Self-container multi-process containers with daemontools
-  * Multi-containers architecture and orchestration
+  * Sharing volumes through a Data Volume Container
+  * Backing volumes up
+* Managing application logs
+  * The `docker logs` command
+  * Using syslog
+  * Using a volume share
+  * Using an ELK stack
+  * With the Remote API
+* Interlude, the Pet vs Cattle metaphor
+* Pet containers
+  * Running multiple processes in a container
+  * Building a Wordpress container
+  * Using a volume
+* Multi-containers architectures and orchestration
+  * Role-based containers
+  * Process-based containers
+  * A simple init script
 * Networking
-  * How networking works inside Docker
-  * Linking containers to each others
+  * How networking works in Docker
+  * Linking containers
+  * Service discovery
   * The Ambassador design pattern
-  * Service Discovery
-    * Built-in
-    * Using third-party tools (etcd, consul, ...)
 * Orchestration
   * What is orchestration?
-  * Third-party tools (Gaudi, Vagrant, ...)
-  * More with Fig
-  * Introduction to libswarm
+  * Introduction to fig
+    * Installing fig
+    * Using fig
+  * Limitations
 * The Remote API
-  * Introduction to the Remote API
+  * What is the Remote API?
   * How to use the Remote API
-  * Implementation examples
-  * Third-party client libraries
+  * Remote API reference
+  * Gotchas
 * The Registry
-  * Introduction to Docker Hub
-  * Trusted builds
+  * Automated builds
   * Setting up a private registry
-  * Private registry and authentication
 
 ---
 Feel free to discuss the content of this book and suggest improvements, I'm listening and continually updating the book. Also, all purchases qualify for free lifetime updates, so do not hesitate and <a href="https://gum.co/discovering-docker/pre-order?wanted=true">pre-order now</a>!

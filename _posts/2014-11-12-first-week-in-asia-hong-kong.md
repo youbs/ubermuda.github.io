@@ -6,6 +6,7 @@ tags:
 - travels
 - hong kong
 - asia
+category: travels
 ---
 
 It has been a week since I left France already, and it has been quite a busy week. As many of you may already know, I spent the week in Hong Kong, and am now in Hanoi, Vietnam (more about that later).
