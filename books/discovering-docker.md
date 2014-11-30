@@ -12,10 +12,8 @@ category: Books
 
 You will then be able to leverage the power of Docker for your every day tasks, like building your own Docker images, setting up development environment, easily running continuous integration in separated containers, etc.
 
-*Discovering Docker* is due for release late november, but you can already pre-order at a special price for a limited time!
-
 <div class="pre-order">
-    <a href="http://gum.co/discovering-docker/pre-order?wanted=true" class="btn btn-success">Pre-order now for $9</a>
+    <a href="http://gum.co/discovering-docker?wanted=true" class="btn btn-success">Order now for $19</a>
 </div>
 
 Not sure just yet? [Read the first chapter online]({% post_url 2014-08-24-what-is-docker %}). More excerpts will be added soon. 
@@ -36,7 +34,7 @@ I will try my best to provide printed copies (probably through [Lulu](http://lul
 
 ## Are there translations planned?
 
-A french version will be released soon after the english one, and downloadable for free for buyers of the english version, so do not hesitate to pre-order now. After that, I'd like to organize community-driven translations whose revenues will be reversed to the translators and/or open-source projects.
+Yes. A french translation is on its way. If you're willing to help in translating Discovering Docker in your own language, please [send me an email](mailto:geoffrey.bachelet@gmail.com) so we can work out the details.
 
 {% include see_also_my_docker_training.html %}
 
@@ -110,6 +108,6 @@ Please be aware that since the book is still not finished, this table of content
   * Setting up a private registry
 
 ---
-Feel free to discuss the content of this book and suggest improvements, I'm listening and continually updating the book. Also, all purchases qualify for free lifetime updates, so do not hesitate and <a href="https://gum.co/discovering-docker/pre-order?wanted=true">pre-order now</a>!
+Feel free to discuss the content of this book and suggest improvements, I'm listening and continually updating the book. Also, all purchases qualify for free lifetime updates, so do not hesitate and <a href="https://gum.co/discovering-docker?wanted=true">order now</a>!
 
 {% include disqus.html %}
