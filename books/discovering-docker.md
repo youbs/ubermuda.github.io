@@ -8,9 +8,9 @@ category: Books
 
 <img class="book-cover" src="/images/discovering-docker/book.png" alt="Discovering Docker" />
 
-*Discovering Docker* is the perfect book to get started with Docker. With it, you will understand what is <a href="http://docker.com/">Docker</a>, how it works, and how it can be useful for you. The book covers everything you need to know about Docker, from building images to orchestrating remote containers.
+*Discovering Docker* is the perfect book to get started with Docker. With it, you will understand what is <a href="http://docker.com/">Docker</a>, how it works, and how it can be useful for you. The book covers everything you need to know to get started with Docker, from building images to orchestrating containers, including basic networking and service discovery.
 
-You will then be able to leverage the power of Docker for your every day tasks, like setting up development environment, easily running continuous integration in separated containers, deploying to any Docker-capable cloud, scaling your infrastructure at the snap of your fingers (not contractual), you name it.
+You will then be able to leverage the power of Docker for your every day tasks, like building your own Docker images, setting up development environment, easily running continuous integration in separated containers, etc.
 
 *Discovering Docker* is due for release late november, but you can already pre-order at a special price for a limited time!
 
@@ -30,13 +30,13 @@ No, you do not. The book is self-sufficient and will teach you everything you ne
 
 ## In what format will the book be available?
 
-*Discovering Docker* will be available out of the box in PDF and ePub formats, and on demand in any format supported by [Pandoc](http://johnmacfarlane.net/pandoc/).
+*Discovering Docker* will be available out of the box in PDF, ePub and MOBI formats, and on demand in any format supported by [Pandoc](http://johnmacfarlane.net/pandoc/).
 
-I will try my best to provide mobi format for Kindles, and printed copies through [Lulu](http://lulu.com), but can't make any promise about these formats as of now.
+I will try my best to provide printed copies (probably through [Lulu](http://lulu.com)), but can't make any promise about this as of now.
 
 ## Are there translations planned?
 
-A french translated version will be released soon after the english one, and downloadable for free for buyers of the english version, so do not hesitate to pre-order now. After that, I'd like to organize community-driven translations whose revenues will be reversed to the translators and/or opensource projects.
+A french version will be released soon after the english one, and downloadable for free for buyers of the english version, so do not hesitate to pre-order now. After that, I'd like to organize community-driven translations whose revenues will be reversed to the translators and/or open-source projects.
 
 {% include see_also_my_docker_training.html %}
 
