@@ -16,7 +16,7 @@ That more practical something is called [Fig](http://www.fig.sh/). Fig started a
 
 ### Installing Fig
 
-Fig is available as a Python package that you can install with the following comand:
+Fig is available as a Python package that you can install with the following command:
 
     $ sudo pip install -U fig
 
