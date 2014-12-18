@@ -19,6 +19,8 @@ Here's an example of Dockerfile that does just that:
     RUN curl -sS https://getcomposer.org/installer | php
     VOLUME ["/srv"]
     WORKDIR /srv
+    RUN useradd composer
+    USER composer
     ENTRYPOINT ["/composer.phar"]
 
 What happens here? Let's review this Dockerfile line by line.
@@ -40,6 +42,11 @@ Standard composer installation procedure, nothing fancy here.
     WORKDIR /srv
 
 The `/srv` directory will be the working directory of our container, so let's make it a volume, and change the default working directory of the image to it.
+
+    RUN useradd composer
+    USER composer
+
+Here we create a `composer` user and set it as the default user for the container. This way, the composer executable will run under the `composer` user and we avoid having to worry about future vulnerabilities in Docker.
 
     ENTRYPOINT ["/composer.phar"]
 
