@@ -38,8 +38,8 @@ First, the *containerize everything* approach. You build a `pg_dump` container (
 
     FROM debian:wheezy
 
-    RUN apt-get update -y &&
-        apt-get install -y postgresql-client &&
+    RUN apt-get update -y && \
+        apt-get install -y postgresql-client && \
         apt-get clean -y
 
     ENTRYPOINT ["/usr/bin/pg_dump"]
