@@ -48,6 +48,8 @@ Build it with `docker build`:
 
     $ docker build -t pg_dump - < Dockerfile
 
+*NOTE*: Building a specific container for `pg_dump` is not mandatory. As stated by Damien in the comments, you can very well reuse your PostgreSQL image that should include `pg_dump` in it. Here we build a container for the sake of the exercise.
+
 And run it:
 
     $ docker run -it --link postgres:db pg_dump -h db
