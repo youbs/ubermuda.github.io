@@ -26,7 +26,9 @@ There are two things to notice here.
 
 ## Cache optimization
 
-First, there are two `RUN apt-get install` instructions, where only one would suffice. This is done to take advantage of `docker build`'s caching system. The thing is, `texlive-latex-base` has **a lot** of dependencies, and installing them is by far the most time consuming task in this Dockerfile. Imagine for a second there's only one `RUN apt-get install` instruction:
+First, there are two `RUN apt-get install` instructions, where only one would suffice. This is done to take advantage of `docker build`'s caching system. The thing is, `texlive-latex-base` has **a lot** of dependencies, and installing them is by far the most time consuming task in this Dockerfile.
+
+Imagine for a second there's only one `RUN apt-get install` instruction:
 
     RUN apt-get install -y curl pandoc texlive-latex-base texlive-fonts-recommended && \
         apt-get clean
@@ -50,7 +52,9 @@ Only the cache for the second `RUN` is invalidated. How neat is that?
 
 ## Image size optimization
 
-The second thing to notice is that I run `apt-get clean` in the same `RUN` as `apt-get install`. This is done to reduce the size of the base image. Imagine I run `apt-get clean` in a separate `RUN` instruction:
+The second thing to notice is that I run `apt-get clean` in the same `RUN` as `apt-get install`. This is done to reduce the size of the base image.
+
+Imagine I run `apt-get clean` in a separate `RUN` instruction:
 
     RUN apt-get install -y texlive-latex-base texlive-fonts-recommended
     RUN apt-get clean
