@@ -57,6 +57,14 @@ Please be aware that since the book is still not finished, this table of content
   * Committing a container
   * Managing containers
   * Managing images
+* Managing containers
+  * Listing containers
+  * Inspecting a container
+  * Container lifecycle
+  * Entering a container
+  * Checking processes
+  * Exporting and importing containers
+  * Restart policies
 * Automating builds with the Dockerfile
   * What is a Dockerfile?
   * The `docker build` command
