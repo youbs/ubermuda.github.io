@@ -59,8 +59,6 @@ Imagine I run `apt-get clean` in a separate `RUN` instruction:
     RUN apt-get install -y texlive-latex-base texlive-fonts-recommended
     RUN apt-get clean
 
-When `docker build` encounters the first `RUN` instruction, it runs it in a new container from whatever image was produced by the previous instruction (we will call it image `A`), and commits it to a new image that we will call `B`. When it gets to the second `RUN`, it creates a new container based on image `B`, and runs `apt-get clean`, effectively cleaning apt's package cache, and commits this to image `C`. So what's the problem here? Simply put, **apt's package cache is still present in image `A`**.
-
-Putting `apt-get clean` in the same `RUN` as `apt-get install` allows to drastically reduce the base image size.
+When `docker build` encounters the first `RUN` instruction, it runs it in a new container from whatever image was produced by the previous instruction (we will call it image `A`), and commits it to a new image that we will call `B`. When it gets to the second `RUN`, it creates a new container based on image `B`, and runs `apt-get clean`, effectively cleaning apt's package cache, and commits this to image `C`. So what's the problem here? Simply put, **apt's package cache is still present in image `B`** and image `C` is actually the composition of images `A`, `B`, and `C`. So even though apt's package cache is not in image `C`, since it still in image `A`, our final image size is still huge and putting `apt-get clean` in the same `RUN` as `apt-get install` allows to drastically reduce the base image size.
 
 {% include see_also_book_discovering_docker.html %}
