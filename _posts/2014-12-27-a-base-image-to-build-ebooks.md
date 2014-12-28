@@ -18,24 +18,24 @@ This is nothing to brag about really, it's a fairly simple Docker image. There's
 
     RUN apt-get install -y texlive-latex-base texlive-fonts-recommended && \
         apt-get clean
-    
-    RUN apt-get install -y curl pandoc && \
+
+    RUN apt-get install -y cabal-install zlib1g-dev locales && \
         apt-get clean
 
 There are two things to notice here.
 
 ## Cache optimization
 
-First, there are two `RUN apt-get install` instructions, where only one would suffice. This is done to take advantage of `docker build`'s caching system. The thing is, `texlive-latex-base` has **a lot** of dependencies, and installing them is by far the most time consuming task in this Dockerfile.
+First, there are two (actually more in the whole Dockerfile, let's focus on these two) `RUN apt-get install` instructions, where only one would suffice. This is done to take advantage of `docker build`'s caching system. The thing is, `texlive-latex-base` has **a lot** of dependencies, and installing them is by far the most time consuming task in this Dockerfile.
 
 Imagine for a second there's only one `RUN apt-get install` instruction:
 
-    RUN apt-get install -y curl pandoc texlive-latex-base texlive-fonts-recommended && \
+    RUN apt-get install -y cabal-install zlib1g-dev locales texlive-latex-base texlive-fonts-recommended && \
         apt-get clean
 
 What happens if I want to install a new package? I need to change the `apt-get install` call like this:
 
-    RUN apt-get install -y NEWPACKAGE curl pandoc texlive-latex-base texlive-fonts-recommended && \
+    RUN apt-get install -y NEWPACKAGE cabal-install zlib1g-dev locales texlive-latex-base texlive-fonts-recommended && \
         apt-get clean
 
 Which will, of course, invalidate the cache for this line. In the next build, I get to re-download and re-install every dependency of `texlive-latex-base`.
@@ -45,7 +45,18 @@ By splitting this in two instructions, I can easily add new packages to install 
     RUN apt-get install -y texlive-latex-base texlive-fonts-recommended && \
         apt-get clean
 
-    RUN apt-get install -y NEWPACKAGE curl pandoc && \
+    RUN apt-get install -y NEWPACKAGE cabal-install zlib1g-dev locales && \
+        apt-get clean
+
+Or even (as it is actually done in the Dockerfile):
+
+    RUN apt-get install -y texlive-latex-base texlive-fonts-recommended && \
+        apt-get clean
+
+    RUN apt-get install -y cabal-install zlib1g-dev locales && \
+        apt-get clean
+
+    RUN apt-get install -y curl && \
         apt-get clean
 
 Only the cache for the second `RUN` is invalidated. How neat is that?
