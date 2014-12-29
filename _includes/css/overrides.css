@@ -178,6 +178,12 @@ p img {
     width: 100%;
 }
 
+img.book-cover-block {
+    width: 30%;
+    display: block;
+    margin-bottom: 2em;
+}
+
 img.book-cover {
     float: right;
     margin-left: 2em;
