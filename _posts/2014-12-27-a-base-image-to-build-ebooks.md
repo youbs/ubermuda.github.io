@@ -85,7 +85,7 @@ Both are unfortunately less then optimal when it comes to image size, because of
 
 Now what, exactly, is image `C`? It is the composition of images `A`, `B` and `C`. That means that anything that is in images `A` and `B` are also in `C`. And what is in `A`? That's right, `curl`. So even though we uninstalled `curl` in step 3, the files are still present in `C`, because of `A`! Well, it is not exactly **in** image `C`, because you still can't use `curl` in a container created from `C`, but you'll certainly have to download it when you pull the image.
 
-This easily verifiable using `docker images` (there's a `SIZE` field) and `docker history` to check the layers of an image.
+This is easily verifiable using `docker images` (there's a `SIZE` field) and `docker history` to check the layers of an image.
 
 This might not amount to much in this particular case, especially given the already huge size of `ubermuda/pandoc`, but in order to optimize your images, it's important to understand and keep in mind how the layer system works when you write your own Dockerfiles.
 
