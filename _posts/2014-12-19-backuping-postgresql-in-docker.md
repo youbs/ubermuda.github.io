@@ -58,4 +58,11 @@ With `postgres` being the container where your PostgreSQL is running.
 
 The last solution, and the less interesting to describe, is simply to expose port `5432` of your container and running `pg_dump` against it, but honestly, where's the fun?
 
+<hr />
+
+Translations:
+
+* Chinese: [备份基于Docker的PostgreSQL数据库](http://dockerone.com/article/118)
+
+
 {% include see_also_book_discovering_docker.html %}

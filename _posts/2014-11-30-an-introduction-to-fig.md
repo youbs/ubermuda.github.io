@@ -88,4 +88,10 @@ You can now check that everything is running fine by running the `docker ps` in 
 
 As of the time of this writing, Fig does not support remote orchestration. That means you can only orchestrate an infrastructure on a single host. It's still useful because you want to get it right as soon as possible.
 
+<hr />
+
+Translations:
+
+* Chinese: [Docker编排工具Fig介绍](http://dockerone.com/article/119)
+
 {% include part_of_book_discovering_docker.html %}

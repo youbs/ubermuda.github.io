@@ -242,4 +242,10 @@ Ok that was easy. We can now start environments very quickly, and update them ea
 
 <p class="post-global-note">Special thanks to <a href="https://twitter.com/clemkeirua">Clément Keirua</a> for the excellent proofreading!</p>
 
+<hr />
+
+Translations:
+
+* Chinese: [基于Docker的PHP开发环境](http://dockerone.com/article/117)
+
 {% include see_also_book_discovering_docker.html %}
