@@ -10,7 +10,7 @@ If you [follow me on GitHub](https://github.com/ubermuda), you might have notice
 
 Most of my Dockerfiles are based off the official `debian` image, usually `debian:jessie`, since it's the latest. In order to minimize the size of my images, I figured running `apt-get clean` whenever I `apt-get install` anything would be great. Turns out the folks who maintain the `debian` image though of this too.
 
-If you check apt's configuration in the official `debian` image, you will that it is already configured to remove the package cache after each `apt-get install` run (the actual configuration is in `/etc/apt/apt.conf.d/docker-clean`).
+If you check apt's configuration in the official `debian` image, you will see that it is already configured to remove the package cache after each `apt-get install` run (the actual configuration is in `/etc/apt/apt.conf.d/docker-clean`).
 
 What does it mean? It means I was not only doing something useless, which is bad, but also advocating it, which is super-bad.
 
