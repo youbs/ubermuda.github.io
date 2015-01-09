@@ -12,9 +12,7 @@ category: Books
 
 You will then be able to leverage the power of Docker for your every day tasks, like building your own Docker images, setting up development environment, easily running continuous integration in separated containers, etc.
 
-<div class="pre-order">
-    <a href="https://gum.co/discovering-docker?wanted=true" class="btn btn-success">Order now for $9</a>
-</div>
+{% include buy_discovering_docker_button.html %}
 
 Not sure just yet? [Read the first chapter online]({% post_url 2014-08-24-what-is-docker %}). More excerpts will be added soon. 
 
@@ -116,6 +114,8 @@ Please be aware that since the book is still not finished, this table of content
   * Setting up a private registry
 
 ---
-Feel free to discuss the content of this book and suggest improvements, I'm listening and continually updating the book. Also, all purchases qualify for free lifetime updates, so do not hesitate and <a href="https://gum.co/discovering-docker?wanted=true">order now</a>!
+Feel free to discuss the content of this book and suggest improvements, I'm listening and continually updating the book. Also, all purchases qualify for free lifetime updates, so do not hesitate!
+
+{% include buy_discovering_docker_button.html %}
 
 {% include disqus.html %}

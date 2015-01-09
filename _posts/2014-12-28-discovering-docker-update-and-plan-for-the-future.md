@@ -23,11 +23,8 @@ The current plan is to keep updates coming at the rate of one new chapter per mo
 
 Each monthly update will also be the occasion to update existing content and keep it up to date. This way you can be confident that your knowledge of Docker stays up to date.
 
-<div class="pre-order">
-    <a href="https://gum.co/discovering-docker?wanted=true"><img class="book-cover-block" alt="Discovering Docker" src="/images/discovering-docker/book.png" /></a>
-    <a href="https://gum.co/discovering-docker?wanted=true" class="btn btn-success">Order now for $9</a>
-</div>
+{% include buy_discovering_docker_button.html %}
 
-The Discovering Docker book is [available for sale at Gumroad](https://gum.co/discovering-docker?wanted=true) for the amazing price of $9. That's $9 for a book that keeps getting better every month, so what are you waiting for?
+The Discovering Docker book is [available for sale](/books/discovering-docker.html) for the amazing price of $9. That's $9 for a book that keeps getting better every month, so what are you waiting for?
 
 {% include see_also_my_docker_training.html %}
