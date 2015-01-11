@@ -22,4 +22,4 @@ It is also the embodiment of a mindset I want to put myself in for 2015:
 
 Even if that's only a tiny piece of a small something, shipping puts you in the right mood for, well, continuing to ship. In this respect, La Constitution paves the ground for a series of articles and projects that I hope to release at a steady pace this year.
 
-In the meantime, why don't you go [read the constitution](http://la-constitution/)?
+In the meantime, why don't you go [read the constitution](http://la-constitution.fr/)?
