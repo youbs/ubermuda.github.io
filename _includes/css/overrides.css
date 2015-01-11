@@ -215,3 +215,7 @@ p.align-justify {
     font-weight: 600;
     line-height: 1em;
 }
+
+#post li p, #post li ul {
+    margin-bottom: 1em;
+}
