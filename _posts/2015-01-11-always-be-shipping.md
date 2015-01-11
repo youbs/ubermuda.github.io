@@ -12,7 +12,7 @@ I'm not sure I can even call that a project, because it is so tiny it took me ba
 
 A few months ago, for a reason I have now forgotten, I set out to read [the constitution of the french republic](http://www.assemblee-nationale.fr/connaissance/constitution.asp). Turns out, even though it is very easy to find, I found it hard to read. The typography and layout really make this harder than it should.
 
-So I decided to make my own version of the constitution. It is nicely formatted and I find it way more readable than the original, I hope you do too.
+So I decided to make my own version of the constitution. Of course the content is the same, but it is nicely formatted and I find it way more readable than the original, I hope you do too.
 
 This micro-project is not a technical achievement in itself, but it's the beginning of something bigger for me. In [my *Level up* post](/level-up.html), I told you about how I was going to work on more meaningful projects. Well there it is. This might not be much, but **it means a lot to me**.
 
