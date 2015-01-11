@@ -35,7 +35,3 @@ This is a quick list of most projects I am currenly maintaining. Some of them ar
 * **[Packer Templates](https://github.com/ubermuda/packer-templates)**
 
   A set of [Packer](https://packer.io/) templates.
-
-* **[Stage1](https://stage1.io/)**
-
-  Automated staging environments using [Docker](https://docker.com/).
