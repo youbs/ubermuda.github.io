@@ -10,7 +10,7 @@ Today, I am releasing [La Constitution](http://la-constitution.fr/).
 
 I'm not sure I can even call that a project, because it is so tiny it took me barely one hour to make. But it is something that matters to me. It is also somewhat relevant to the current events, with everyone speaking about freedom and speech, republican values and so on.
 
-A few months ago, for a reason I have now forgotten, I set out to read [the constitution of the french republic](http://www.assemblee-nationale.fr/connaissance/constitution.asp). Turns out, even though it is very easy to find, I found it hard to read. The typography and layout really make this harder to read than it should.
+A few months ago, for a reason I have now forgotten, I set out to read [the constitution of the french republic](http://www.assemblee-nationale.fr/connaissance/constitution.asp). Turns out, even though it is very easy to find, I found it hard to read. The typography and layout really make this harder than it should.
 
 So I decided to make my own version of the constitution. It is nicely formatted and I find it way more readable than the original, I hope you do too.
 
