@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Always be shipping
-category: level-up
 tags:
 - shipping
 - level-up

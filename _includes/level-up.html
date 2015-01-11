@@ -4,7 +4,7 @@ Other posts you might also be interested into:
 
 <ul>
     {% for post in site.posts %}
-    {% if post.category == 'level-up' %}
+    {% if post.tags contains 'level-up' %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
     {% endfor %}
