@@ -19,43 +19,43 @@ This is a list of the Dockerfiles repositories I maintain. I try to keep them up
 
   A debian image with the utf-8 locale configured.
 
-* **[ubermuda/docker-nodejs](https://github.com/ubermuda/docker-nodejs)**
+* **[ubermuda/nodejs](https://github.com/ubermuda/docker-nodejs)**
 
   A base nodejs image. Half the size of the official nodejs image.
 
-* **[ubermuda/docker-pagekit](https://github.com/ubermuda/docker-pagekit)**
+* **[ubermuda/pagekit](https://github.com/ubermuda/docker-pagekit)**
 
   An image (and fig configuration) to run the [PageKit CMS](http://www.pagekit.com/).
 
-* **[ubermuda/docker-pandoc](https://github.com/ubermuda/docker-pandoc)**
+* **[ubermuda/pandoc](https://github.com/ubermuda/docker-pandoc)**
 
   An image with Pandoc installed.
 
   More about this image: [A base image to build ebooks](/a-base-image-to-build-ebooks.html).
 
-* **[ubermuda/docker-pandoc-ebook](https://github.com/ubermuda/docker-pandoc-ebook)**
+* **[ubermuda/pandoc-ebook](https://github.com/ubermuda/docker-pandoc-ebook)**
 
   An image to generate ebooks using Pandoc and KindleGen.
 
   More about this image: [A base image to build ebooks](/a-base-image-to-build-ebooks.html).
 
-* **[ubermuda/docker-phantomjs](https://github.com/ubermuda/docker-phantomjs)**
+* **[ubermuda/phantomjs](https://github.com/ubermuda/docker-phantomjs)**
 
   An image with PhantomJS installed.
 
-* **[ubermuda/docker-screenshot](https://github.com/ubermuda/docker-screenshot)**
+* **[ubermuda/screenshot](https://github.com/ubermuda/docker-screenshot)**
 
   An image to take screenshots of websites using PhantomJS.
 
-* **[ubermuda/docker-symfony](https://github.com/ubermuda/docker-symfony)**
+* **[ubermuda/symfony](https://github.com/ubermuda/docker-symfony)**
 
   A complete runtime environment for basic [Symfony](http://symfony.com/) projects.
 
-* **[ubermuda/docker-toran-proxy](https://github.com/ubermuda/docker-toran-proxy)**
+* **[ubermuda/toran-proxy](https://github.com/ubermuda/docker-toran-proxy)**
 
   Work in progress. An image to run the [Toran Proxy](https://toranproxy.com/).
 
-* **[ubermuda/docker-wordpress](https://github.com/ubermuda/docker-wordpress)**
+* **[ubermuda/wordpress](https://github.com/ubermuda/docker-wordpress)**
 
   A complete runtime for running the [WordPress CMS](http://wordpress.com/).
 
