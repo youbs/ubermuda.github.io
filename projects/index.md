@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: Projects
+title: Things I make
 ---
 
 This is a quick list of most projects I am currenly maintaining. Some of them are more active then others obviously.

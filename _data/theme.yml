@@ -6,24 +6,10 @@ highlight_color: '#3498db'
 # Profile links on the left sidebar, leave blank to ignore
 social:
   github: ubermuda
-  #bitbucket: philipj
-  # hacker_news: swanson
-  #stackexchange: 348619
-  #stackoverflow: 348619
   twitter: ubermuda
-  #facebook: zuck
-  #tumblr: animalygifs
-  #linkedin: philipjagielski
-  #gplus: 110552447039675960964
 
 # "Hi, I'm _______"
-name: Geoffrey
+name: I am Geoffrey
 full_name: Geoffrey Bachelet
 email: geoffrey.bachelet@gmail.com
 tagline: "Web development, devops and travels."
-
-# Google Analytics key, leave blank to ignore
-google_analytics_key: ~
-
-# Toggle "Postings are my own" disclaimer in footer
-show_disclaimer: false
