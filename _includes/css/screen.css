@@ -224,4 +224,12 @@ span.post-date {
     .sidebar:hover ul#menu {
         display: none;
     }
+
+    span.mdash {
+        display: none;
+    }
+
+    span.post-date {
+        display: block;
+    }
 }
