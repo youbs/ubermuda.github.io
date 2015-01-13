@@ -192,6 +192,11 @@ a small {
     display: block;
 }
 
+span.post-date {
+    font-size: .5em;
+    color: #888;
+}
+
 @media screen and (max-width: 1024px) {
     h1, h2, h3, h4, h5, h6 {
         /*text-align: center;*/
