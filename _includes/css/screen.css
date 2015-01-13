@@ -147,6 +147,7 @@ img.book-cover.big.pull-right {
 
 div.pre-order {
     text-align: center;
+    clear: both;
 }
 
 div.pre-order a {
