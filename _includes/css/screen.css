@@ -104,7 +104,7 @@ ul#menu li a:hover {
 
 .disclaimer {
     border-top: 1px solid whitesmoke;
-    padding: 2em;
+    /*padding-top: 1em;*/
     margin-top: 2em;
 }
 
