@@ -41,7 +41,7 @@ h1 {
 }
 
 ul#menu {
-    display: none;
+    /*display: none;*/
     list-style-type: none;
     /*position: fixed;*/
     /*top: 125px;*/
@@ -73,6 +73,11 @@ ul#menu li a:hover {
     padding-top: 50px;
     /*border-right: 1px solid whitesmoke;*/
     /*box-shadow: 0px 5px 15px #888;*/
+    opacity: .2;
+}
+
+.sidebar:hover {
+    opacity: 1;
 }
 
 /*.sidebar #logo {
@@ -147,7 +152,34 @@ div.pre-order {
 div.pre-order a {
     font-size: 32px !important;
     padding: .5em !important;
-    margin-top: 2em !important;
+    /*margin-top: 2em !important;*/
+    margin: 1em 0 !important;
+}
+
+div.pre-order a {
+font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif;
+text-decoration: none;
+box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+border-radius: 2px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 9px;
+padding-right: 9px;
+box-sizing: content-box;
+border: 1px solid;
+font-weight: bold;
+font-size: 13px;
+background: -webkit-linear-gradient(#74C937 0%, #67B131 100%);
+background: -moz-linear-gradient(#74C937 0%, #67B131 100%);
+background: -ms-linear-gradient(#74C937 0%, #67B131 100%);
+background: -o-linear-gradient(#74C937 0%, #67B131 100%);
+background: linear-gradient(#74C937 0%, #67B131 100%);
+border-color: #60a62e #519f18 #409701;
+color: #FFFFFF!important;
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.22);
+display: inline-block;
+outline: none;
+cursor: pointer;
 }
 
 p img {
