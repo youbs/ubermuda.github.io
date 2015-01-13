@@ -1,0 +1,41 @@
+p, li, code {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    margin: 1em 0 1em 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    /*text-align: center;*/
+    font-size: 2.5em;
+}
+
+.columns {
+    width: 100% !important;
+}
+
+.sidebar {
+    position: static;
+    height: auto;
+    background: transparent;
+    margin: 2em 0 2em 0 !important;
+    padding: 0 !important;
+}
+
+.content {
+    padding: 0 !important;
+    margin: 5% !important;
+    width: 90% !important;
+}
+
+.sidebar ul#menu {
+    display: none;
+}
+
+span.mdash {
+    display: none;
+}
+
+span.post-date {
+    display: block;
+}
