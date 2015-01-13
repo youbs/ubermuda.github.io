@@ -3,3 +3,7 @@
 {% include css/normalize.css %}
 {% include css/skeleton.css %}
 {% include css/screen.css %}
+
+@media print {
+    {% include css/print.css %}
+}

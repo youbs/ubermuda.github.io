@@ -1,7 +1,21 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica,Arial,sans-serif;
+.sidebar {
+    display: none;
 }
 
-ul {
+.content {
+    width: 90%;
+    margin: 5% !important;
+    padding: 5% !important;
+}
+
+span.mdash {
+    display: none;
+}
+
+span.post-date {
+    display: block;
+}
+
+#disqus_thread {
     display: none;
 }
