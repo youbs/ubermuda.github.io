@@ -12,7 +12,7 @@ code {
     overflow: scroll;
 }
 
-ul {
+ul, ol {
     margin-left: 3em;
     list-style: disc;
 }
