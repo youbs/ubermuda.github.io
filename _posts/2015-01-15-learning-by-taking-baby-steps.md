@@ -1,6 +1,6 @@
 ---
 layout: post
-category: level-up
+tags: [level-up]
 title: Learning by taking baby steps
 ---
 
