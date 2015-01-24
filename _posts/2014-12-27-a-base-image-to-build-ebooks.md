@@ -11,7 +11,7 @@ After a bit of investigation, I found that the versions of Pandoc I use on my ma
 
 Well, no longer. I am pleased to present you `ubermuda/pandoc-ebook`, a Docker image with Pandoc, pdflatex and kindlegen installed:
 
-* [Source at GitHub](https://github.com/ubermuda/dockerfiles/tree/master/pandoc-ebook)
+* [Source at GitHub](https://github.com/ubermuda/docker-pandoc-ebook)
 * [Image at Docker Hub](https://registry.hub.docker.com/u/ubermuda/pandoc-ebook/)
 
 This is nothing to brag about really, it's a fairly simple Docker image. There are three things I'd like to tell you about though.

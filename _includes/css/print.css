@@ -13,9 +13,13 @@ span.mdash {
 }
 
 span.post-date {
-    display: block;
+    display: none;
 }
 
 #disqus_thread {
+    display: none;
+}
+
+.post-global-note {
     display: none;
 }
