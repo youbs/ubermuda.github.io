@@ -10,11 +10,12 @@ This post is an excerpt from my book, [Discovering Docker](http://discoveringdoc
 
 1. [Maintainability](#maintainability)
     1. [Use inheritance](#use-inheritance)
+    2. [Run `apt-get install` in the same `RUN` as `apt-get update`](#run__in_the_same__as_)
     2. [Only one process per container](#only-one-process-per-container)
     3. [Split arguments, and sort them](#split-arguments-and-sort-them)
-    4. [Use absolute paths with `WORKDIR`](#use-absolute-paths-with-workdir)
+    4. [Use absolute paths with `WORKDIR`](#use_absolute_paths_with_)
     5. [Pin versions when possible](#pin-versions-when-possible)
-    6. [Use `COPY` instead of `ADD`](#use-copy-instead-of-add)
+    6. [Use `COPY` instead of `ADD`](#use__instead_of_)
 2. Optimization
     1. Use a `.dockerignore` file
     2. Choose a lightweight base image
@@ -22,7 +23,8 @@ This post is an excerpt from my book, [Discovering Docker](http://discoveringdoc
     4. Understand the layering system
     5. Know your tools
     6. Know the Dockerfile DSL
-    7. Optimize file downloading with curl
+    7. Even more apt optimization
+    8. Optimize file downloading with curl
 3. Runnability
     1. Use `EXPOSE`
     2. Expandable containers
@@ -41,10 +43,20 @@ Inheritance is the only mechanism at your disposal for Dockerfile re-usability, 
 
     FROM debian:jessie
 
+    RUN apt-get update && apt-get install -y git vim curl
+
+Do you build a lot of nodejs applications, write a base nodejs image and re-use it everywhere. Having a lot of images is not a bad thing. Build small, specialised images that you can re-use and build upon.
+
+### Run `apt-get install` in the same `RUN` as `apt-get update`
+
+And it works for any other package manager. Consider this, the former example, but with `apt-get update` and `apt-get install` on their own lines:
+
+    FROM debian:jessie
+
     RUN apt-get update
     RUN apt-get install -y git vim curl
 
-Do you build a lot of nodejs applications, write a base nodejs image and re-use it everywhere. Having a lot of images is not a bad thing. Build small, specialised images that you can re-use and build upon.
+Everything works fine, until the day you need to install a new package. You innocently update the `apt-get install` line. The immediate consequence of this is that the cache is now invalidated from that particular line. The problem here is that the `apt-get install` will run with a possibly outdated apt index, because `apt-get update` did not run (because it's still cached), which might result in 404 errors when apt tries to download the packages, hence failing your build.
 
 ### Only one process per container
 
