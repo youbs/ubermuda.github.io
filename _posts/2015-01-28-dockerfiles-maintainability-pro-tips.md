@@ -23,8 +23,9 @@ This post is an excerpt from my book, [Discovering Docker](http://discoveringdoc
     4. Understand the layering system
     5. Know your tools
     6. Know the Dockerfile DSL
-    7. Even more apt optimization
-    8. Optimize file downloading with curl
+    7. Skipping recommended packages
+    8. Optimizing `apt-get update`
+    9. Optimize file downloading with curl
 3. Runnability
     1. Use `EXPOSE`
     2. Expandable containers
