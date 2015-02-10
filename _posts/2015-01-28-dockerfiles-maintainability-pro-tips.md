@@ -6,7 +6,7 @@ title: Dockerfiles maintainability pro-tips
 
 Writing a basic Dockerfile might be easy, but as your requirements gradually complexify, so do your Dockerfiles. Until the point where it can be a bit hard to get it right. Here are a few advices, common-sense wisdom, and pro tips to write efficient and solid Dockerfiles.
 
-This post is an excerpt from my book, [Discovering Docker](http://discoveringdocker.com/). The chapter original chapter has 2 more sections: **Optimization** and **Runnability**. I'm leaving the entire table of contents as-is so you can get a glimpse at all the great content that's waiting for you in the book!
+This post is an excerpt from my book, [Discovering Docker](http://discoveringdocker.com/). The original chapter has 2 more sections: **Optimization** and **Runnability**. I'm leaving the entire table of contents as-is so you can get a glimpse at all the great content that's waiting for you in the book!
 
 1. [Maintainability](#maintainability)
     1. [Use inheritance](#use-inheritance)
